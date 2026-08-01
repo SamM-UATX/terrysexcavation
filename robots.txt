@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /contact/thanks/
 
-Sitemap: https://terrysbobcatpoolremoval.com/sitemap.xml
+Sitemap: https://terrysexcavation.com/sitemap.xml

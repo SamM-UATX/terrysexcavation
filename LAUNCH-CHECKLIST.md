@@ -6,16 +6,11 @@ the site actually generate calls.
 
 ## 1. Domain
 
-- Domain confirmed: `terrysbobcatpoolremoval.com`. Connect it to Netlify per the
-  README's GitHub → Netlify deploy steps once the site is deployed.
-- **Shorter domain?** A short, brandable domain (e.g. something close to
-  "Terry's Bobcat") is worth considering for word-of-mouth, truck signage, and
-  business cards, since `terrysbobcatpoolremoval.com` is long to say or type. If
-  you buy one, don't run two competing sites — set the short domain to 301-redirect
-  to the primary SEO domain (Netlify supports this in Domain settings) so search
-  engines consolidate authority on one URL instead of splitting it.
-- Once live, replace the placeholder `terrysbobcatpoolremoval.com` URLs throughout
-  the site (see README) with the real domain.
+- Domain used throughout the site: `terrysexcavation.com` — **registration/ownership
+  not confirmed**, unlike the old `terrysbobcatpoolremoval.com`. Register/confirm it
+  first, then connect it to Netlify per the README's GitHub → Netlify deploy steps.
+- Once live, double check every canonical/OG URL and the sitemap actually resolve on
+  the real domain (see README).
 
 ## 2. Google Search Console
 
@@ -33,8 +28,9 @@ the site actually generate calls.
 ## 4. Google Business Profile
 
 - Claim/create a listing at [business.google.com](https://business.google.com)
-  under **Terry's Bobcat Swimming Pool Removal**, matching the site's name, phone,
-  and (once decided) address exactly (NAP consistency).
+  under **Terry's Excavation**, matching the site's name, phone, and (once decided)
+  address exactly (NAP consistency). Resolve the business-name/DBA question (see
+  README) before doing this — Google Business Profile checks license/name matches.
 - This is typically the single biggest lever for local map-pack rankings — higher
   priority than most of the other items on this list.
 

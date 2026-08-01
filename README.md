@@ -1,4 +1,4 @@
-# Terry's Bobcat Swimming Pool Removal — website
+# Terry's Excavation — website
 
 Plain HTML/CSS/JS site. No build step, no framework, no npm install. Pages use
 clean, directory-based URLs (e.g. `/services/pool-removal/`) instead of `.html`
@@ -91,7 +91,10 @@ production.
   `(408) 459-2682` and replace both the digits-only version and the display version.
 - **Email** (`Terrysbobcatservices@gmail.com`) is in the footer of every page and
   in the homepage's `LocalBusiness` JSON-LD. Search for `Terrysbobcatservices@gmail.com`
-  if it ever needs to change.
+  if it ever needs to change. **Note:** the business was renamed from "Terry's Bobcat"
+  to "Terry's Excavation" on the site itself, but this email address (and nothing
+  else about the actual mailbox) was left as-is since it's a real, working inbox —
+  update it here once/if a new address is set up.
 
 ## Contact form — what's configured vs. what you must do before launch
 
@@ -131,9 +134,11 @@ below) using a real, JS-free HTML submission — no fake success states:
 - `sitemap.xml` and `robots.txt` at the project root
 - Semantic headings and real city names in text (not just images) for local search
 
-**Domain:** `terrysbobcatpoolremoval.com` is confirmed and already used as the real
-canonical/OG URL, `sitemap.xml`, and `robots.txt` domain throughout — no
-find-and-replace needed once it's connected in Netlify (see Deploying below).
+**Domain:** `terrysexcavation.com` is used as the canonical/OG URL, `sitemap.xml`,
+and `robots.txt` domain throughout — no find-and-replace needed once it's connected
+in Netlify (see Deploying below). **This domain has not been verified as registered/owned**
+— confirm that before connecting it. (The site previously ran as "Terry's Bobcat" at
+`terrysbobcatpoolremoval.com`; that repo/site was left untouched — this is a separate project.)
 
 ## Deploying (GitHub → Netlify)
 
@@ -148,7 +153,7 @@ Netlify's Git integration rather than dragging a folder onto the dashboard:
    (or `.`) — this is a static site with no build step.
 4. Every push to `main` will auto-redeploy from then on, and Netlify Forms (see
    above) starts working as soon as the first deploy finishes.
-5. Go to **Domain settings → Add a domain**, enter `terrysbobcatpoolremoval.com`,
+5. Go to **Domain settings → Add a domain**, enter `terrysexcavation.com`,
    and follow the DNS instructions Netlify gives you (a couple of records added
    wherever the domain is registered). Netlify handles HTTPS automatically once
    DNS points to it.
@@ -157,17 +162,22 @@ Netlify's Git integration rather than dragging a folder onto the dashboard:
 
 These are flagged rather than guessed, per the project brief:
 
-- **Domain** — confirmed as `terrysbobcatpoolremoval.com`; connect it in Netlify
-  per the Deploying section. See `LAUNCH-CHECKLIST.md` for the optional
-  shorter-domain/redirect discussion.
+- **Domain** — set throughout the site as `terrysexcavation.com`, but **not confirmed
+  as actually registered** (unlike the old `terrysbobcatpoolremoval.com`, which was
+  verified). Register/confirm ownership before connecting it in Netlify per the
+  Deploying section.
 - **Business street address** — the `PostalAddress` in each page's JSON-LD only has
   region/country. Add `streetAddress`/`postalCode` once available (or omit entirely
   if Terry operates without a public-facing shop address).
 - **Contractor license / business name note** — CA C-12 license #618640 is shown
-  sitewide (footer + About page), confirmed live on the CSLB lookup. That license is
-  registered to "A-1 HAULING," with no DBA on file for "Terry's Bobcat" — the site
-  intentionally shows the license number alone without pairing it to a business name.
-  Resolving the DBA question (if desired) is between Terry and CSLB, not a website change.
+  sitewide (footer + About page), confirmed live on the CSLB lookup as of the previous
+  "Terry's Bobcat" version of this site. That license is registered to "A-1 HAULING,"
+  with no DBA on file for "Terry's Bobcat" — and now the site has been renamed again to
+  "Terry's Excavation," which also has no confirmed DBA on file. The site intentionally
+  shows the license number alone without pairing it to a business name. Resolving the
+  DBA question (if desired) is between Terry and CSLB, not a website change — but it's
+  worth resolving given the site now displays a business name that doesn't match either
+  the license holder or the (also mismatched) contact email/original domain.
 - **More customer reviews** — only one real testimonial exists (David, San Jose,
   carried over from the previous site). The reviews section says "more reviews
   coming soon" rather than inventing others. No review structured data has been
