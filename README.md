@@ -87,8 +87,8 @@ production.
 ## Updating contact info
 
 - **Phone** appears on every page (nav, hero, footer, mobile call button, `tel:`
-  links, and each page's JSON-LD). Search the whole project for `4084592682` and
-  `(408) 459-2682` and replace both the digits-only version and the display version.
+  links, and each page's JSON-LD). Search the whole project for `4086054224` and
+  `(408) 605-4224` and replace both the digits-only version and the display version.
 - **Email** (`Terrysbobcatservices@gmail.com`) is in the footer of every page and
   in the homepage's `LocalBusiness` JSON-LD. Search for `Terrysbobcatservices@gmail.com`
   if it ever needs to change. **Note:** the business was renamed from "Terry's Bobcat"
