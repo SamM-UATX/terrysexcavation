@@ -167,14 +167,15 @@ button { font-family: inherit; }
 .page-hero h1 { color: #fff; font-size: clamp(1.9rem, 4vw, 2.7rem); margin: 0; }
 
 /* ===== Who we are ===== */
-.who-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 56px; align-items: start; }
+.who-photo-wide { margin-bottom: 40px; }
+.who-photo-wide img { width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow); display: block; }
+.who-copy { max-width: 720px; }
 .who-copy p { font-size: 1.02rem; }
 .who-copy .section-lede { font-size: 1.15rem; color: #fff; font-weight: 500; text-transform: none; }
 .who-stats { display: flex; gap: 32px; margin: 28px 0 30px; padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .who-stats li { display: flex; flex-direction: column; }
 .who-stats strong { font-family: var(--font-head); font-weight: 800; font-size: 2rem; color: var(--accent); }
 .who-stats span { font-size: .82rem; color: var(--ink-soft); }
-.who-photo img { width: 100%; max-width: 320px; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
 
 /* ===== Method detail pages ===== */
 .method-grid-body { max-width: 720px; }
@@ -469,8 +470,6 @@ dialog.lightbox::backdrop { background: rgba(5,6,7,.92); }
 @media (max-width: 900px) {
   .card-grid { grid-template-columns: 1fr; }
   .other-methods .card-grid { grid-template-columns: 1fr; }
-  .who-grid { grid-template-columns: 1fr; }
-  .who-photo img { max-width: 240px; }
   .why-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .service-detail-band { grid-template-columns: 1fr; }
